@@ -3,8 +3,8 @@
 # Common configuration and functions for iperf benchmarks
 
 # Time for the test to run
-TIME="60"
-TIME_SERVER="70"
+TIME="180"
+TIME_SERVER="200"
 
 # Enhanced reports
 ENHANCED_REPORTS="-e"

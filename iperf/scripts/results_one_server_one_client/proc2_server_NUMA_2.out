@@ -1,0 +1,10 @@
+------------------------------------------------------------
+Server listening on TCP port 5560
+TCP window size: 1.00 GByte (WARNING: requested 0.500 GByte)
+------------------------------------------------------------
+[  1] local 128.55.70.248 port 5560 connected with 128.55.70.247 port 59446
+[  2] local 128.55.70.248 port 5560 connected with 128.55.70.247 port 59460
+[ ID] Interval       Transfer     Bandwidth
+[  2] 0.00-180.46 sec   336 GBytes  16.0 Gbits/sec
+[  1] 0.00-180.55 sec   169 GBytes  8.02 Gbits/sec
+[SUM] 0.00-180.55 sec   505 GBytes  24.0 Gbits/sec

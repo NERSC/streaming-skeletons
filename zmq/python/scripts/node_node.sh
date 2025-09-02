@@ -31,7 +31,7 @@ coordinator_node_hostname=${coordinator_node}.chn.perlmutter.nersc.gov
 echo "Coordinator node hostname: $coordinator_node_hostname"
 
 num_groups=4
-num_receivers_per_sender=1
+num_receivers_per_sender=8
 
 # Create initial YAML configuration file for plotting
 echo "Creating initial YAML configuration file for comparison plot..."

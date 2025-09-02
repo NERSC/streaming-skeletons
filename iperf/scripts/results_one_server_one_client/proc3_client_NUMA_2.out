@@ -1,0 +1,12 @@
+------------------------------------------------------------
+Client connecting to 128.55.70.248, TCP port 5561 with pid 481899 (2 flows)
+Write buffer size: 131072 Byte
+TCP window size: 1.00 GByte (WARNING: requested  512 MByte)
+------------------------------------------------------------
+[  1] local 128.55.70.247%hsn0:chn port 57892 connected with 128.55.70.248 port 5561 (MSS=8948) (sock=4) (ct=0.19 ms) on 2025-08-12 12:03:47 (PDT)
+[  2] local 128.55.70.247%hsn0:chn port 57886 connected with 128.55.70.248 port 5561 (MSS=8948) (sock=3) (ct=0.19 ms) on 2025-08-12 12:03:47 (PDT)
+[ ID] Interval        Transfer    Bandwidth       Write/Err  Rtry     Cwnd/RTT        NetPwr
+[  2] 0.00-180.42 sec   334 GBytes  15.9 Gbits/sec  2734398/0          0    25742K/7521 us  264132
+[  1] 0.00-180.61 sec   169 GBytes  8.03 Gbits/sec  1383331/0          0    27796K/2432 us  412793
+[SUM] 0.00-180.31 sec   503 GBytes  23.9 Gbits/sec  4117729/0         0
+[ CT] final connect times (min/avg/max/stdev) = 0.190/0.191/0.192/0.192 ms (tot/err) = 2/0

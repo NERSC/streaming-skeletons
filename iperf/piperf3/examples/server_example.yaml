@@ -1,0 +1,12 @@
+description: Iperf3 server configuration for HPC testing
+name: iperf3_server
+output_directory: ./server_results
+server_config:
+  daemon: false
+  format: g
+  interval: 1.0
+  json_output: true
+  one_off: false
+  port: 5201
+  verbose: true
+version: '1.0'

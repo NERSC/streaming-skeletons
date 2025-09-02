@@ -1,0 +1,33 @@
+[project]
+name = "piperf3"
+version = "0.1.0"
+description = "A fully-featured Python wrapper for iperf3 with configuration management, plotting, and CLI interface"
+readme = "README.md"
+authors = [
+    { name = "Sam Welborn", email = "swelborn@lbl.gov" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "seaborn>=0.12.0",
+    "matplotlib>=3.10.6",
+    "typer>=0.17.3",
+    "pyyaml>=6.0.2",
+    "pandas>=2.3.2",
+    "rich>=14.1.0",
+    "python-dotenv>=1.1.1",
+    "pydantic>=2.11.7",
+    "numpy>=2.3.2",
+    "pydantic-settings>=2.10.1",
+]
+
+[project.scripts]
+piperf3 = "piperf3:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+]

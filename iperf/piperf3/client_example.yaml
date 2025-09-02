@@ -1,0 +1,44 @@
+name: "hpc_network_client_test"
+description: "High-performance network testing between compute nodes (client-side)"
+version: "1.0"
+tags:
+  - "hpc"
+  - "network" 
+  - "performance"
+  - "client"
+
+client_config:
+  server_host: "${PIPERF3_SERVER_HOST:node001.cluster.local}"
+  port: 5201
+  time: 30
+  parallel_streams: 4
+  bitrate: "10G"
+  protocol: "tcp"
+  format: "g"
+  json_output: true
+  interval: 1.0
+  reverse: false
+  bidir: false
+  get_server_output: true
+  title: "HPC Network Client Test"
+  verbose: true
+  
+  # TCP-specific settings
+  no_delay: true
+  congestion_algorithm: "cubic"
+  window: "128K"
+  
+  # Performance settings
+  zerocopy: true
+  omit: 3
+  
+output_directory: "./client_results"
+run_id: "${PIPERF3_RUN_ID:auto}"
+
+# Environment-specific settings for supercomputers
+env_vars:
+  OMP_NUM_THREADS: "1"
+  
+# These will be automatically populated by the system
+# node_info: {}
+# slurm_info: {}

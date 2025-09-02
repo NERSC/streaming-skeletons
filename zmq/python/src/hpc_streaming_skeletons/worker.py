@@ -75,7 +75,11 @@ def worker(
     settings: "BenchmarkSettings",
 ):
     logger = get_worker_logger(worker_id, settings.logging.get_level_int())
-    ctx = zmq.Context()
+    if role == Role.receiver:
+        io_threads = settings.worker.receiver_io_threads
+    else:
+        io_threads = settings.worker.sender_io_threads
+    ctx = zmq.Context(io_threads=io_threads)
 
     _worker_model = WorkerCreate(role=role, worker_id=worker_id)
 
@@ -140,7 +144,8 @@ def worker(
                 # Sender connects to all receiver ports
                 for i, receiver_port in enumerate(group_setup_info.receiver_ports):
                     addr = f"tcp://{settings.network.coordinator_ip}:{receiver_port}"
-                    data_socket.connect(addr)
+                    for _ in range(settings.worker.num_connections):
+                        data_socket.connect(addr)
                     logger.debug(f"Connected to receiver {i} at {addr}.")
         else:
             data_socket = ctx.socket(zmq.SUB if config.pub else zmq.PULL)
@@ -150,7 +155,8 @@ def worker(
             if settings.worker.sender_bind:
                 # Receivers connect to sender's port
                 addr = f"tcp://{settings.network.coordinator_ip}:{group_setup_info.data_port}"
-                data_socket.connect(addr)
+                for _ in range(settings.worker.num_connections):
+                    data_socket.connect(addr)
                 logger.debug(f"Connected to sender at {addr}.")
             else:
                 # Each receiver binds to its own port

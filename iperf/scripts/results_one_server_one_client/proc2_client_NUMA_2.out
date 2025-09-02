@@ -1,0 +1,12 @@
+------------------------------------------------------------
+Client connecting to 128.55.70.248, TCP port 5560 with pid 481900 (2 flows)
+Write buffer size: 131072 Byte
+TCP window size: 1.00 GByte (WARNING: requested  512 MByte)
+------------------------------------------------------------
+[  2] local 128.55.70.247%hsn0:chn port 59460 connected with 128.55.70.248 port 5560 (MSS=8948) (sock=4) (ct=0.23 ms) on 2025-08-12 12:03:47 (PDT)
+[  1] local 128.55.70.247%hsn0:chn port 59446 connected with 128.55.70.248 port 5560 (MSS=8948) (sock=3) (ct=0.20 ms) on 2025-08-12 12:03:47 (PDT)
+[ ID] Interval        Transfer    Bandwidth       Write/Err  Rtry     Cwnd/RTT        NetPwr
+[  2] 0.00-180.47 sec   336 GBytes  16.0 Gbits/sec  2754147/0          0    31186K/3573 us  559825
+[  1] 0.00-180.55 sec   169 GBytes  8.02 Gbits/sec  1381709/0          0    22212K/2705 us  370812
+[SUM] 0.00-180.11 sec   505 GBytes  24.1 Gbits/sec  4135856/0         0
+[ CT] final connect times (min/avg/max/stdev) = 0.196/0.211/0.226/0.196 ms (tot/err) = 2/0

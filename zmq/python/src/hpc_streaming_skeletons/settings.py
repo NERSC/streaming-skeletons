@@ -124,6 +124,13 @@ class WorkerSettings(BaseModel):
         default=1.0,
         description="Delay in seconds after socket setup before signaling ready",
     )
+    sender_io_threads: int = 1
+    receiver_io_threads: int = 1
+    num_connections: int = Field(
+        default=1,
+        description="Number times sock.connect() connections created in loop per connecting socket. "
+        "With more connections, the worker will make use of zmq io threads.",
+    )
 
 
 class OutputSettings(BaseModel):

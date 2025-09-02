@@ -1,0 +1,36 @@
+name: "hpc_network_server"
+description: "High-performance network testing server for compute nodes"
+version: "1.0"
+tags:
+  - "hpc"
+  - "network"
+  - "performance"
+  - "server"
+
+server_config:
+  port: 5201
+  bind_address: null  # Bind to all interfaces
+  daemon: false
+  one_off: false
+  json_output: true
+  verbose: true
+  interval: 1.0
+  format: "g"
+  
+  # Server limits
+  server_bitrate_limit: null  # No limit
+  idle_timeout: 600  # 10 minutes
+  
+  # Logging
+  force_flush: true
+  timestamps: "default"
+
+output_directory: "./server_results"
+
+# Environment-specific settings for supercomputers
+env_vars:
+  OMP_NUM_THREADS: "1"
+
+# These will be automatically populated by the system  
+# node_info: {}
+# slurm_info: {}

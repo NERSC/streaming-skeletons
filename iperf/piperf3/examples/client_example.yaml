@@ -1,0 +1,23 @@
+client_config:
+  bidir: false
+  bitrate: 10G
+  format: g
+  get_server_output: true
+  interval: 1.0
+  json_output: true
+  parallel_streams: 4
+  port: 5201
+  protocol: tcp
+  reverse: false
+  server_host: ${PIPERF3_SERVER_HOST:node001}
+  time: 30
+  title: HPC Network Test
+description: High-performance network testing between compute nodes
+name: supercomputer_performance_test
+output_directory: ./results
+run_id: ${PIPERF3_RUN_ID:auto}
+tags:
+- hpc
+- network
+- performance
+version: '1.0'

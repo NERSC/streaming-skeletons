@@ -1,0 +1,10 @@
+------------------------------------------------------------
+Server listening on TCP port 5561
+TCP window size: 1.00 GByte (WARNING: requested 0.500 GByte)
+------------------------------------------------------------
+[  1] local 128.55.70.248 port 5561 connected with 128.55.70.247 port 57886
+[  2] local 128.55.70.248 port 5561 connected with 128.55.70.247 port 57892
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.00-180.41 sec   334 GBytes  15.9 Gbits/sec
+[  2] 0.00-180.61 sec   169 GBytes  8.03 Gbits/sec
+[SUM] 0.00-180.61 sec   503 GBytes  23.9 Gbits/sec
