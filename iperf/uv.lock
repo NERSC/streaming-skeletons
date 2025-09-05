@@ -157,7 +157,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "piperf3", specifier = ">=0.0.5" }]
+requires-dist = [{ name = "piperf3", specifier = ">=0.0.6" }]
 
 [[package]]
 name = "kiwisolver"
@@ -480,7 +480,7 @@ wheels = [
 
 [[package]]
 name = "piperf3"
-version = "0.0.5"
+version = "0.0.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
@@ -494,9 +494,9 @@ dependencies = [
     { name = "seaborn" },
     { name = "typer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ba/cf/e03f51e234bbeaf73417fdc0bb6275f4d49929daf512c28c0ee495662246/piperf3-0.0.5.tar.gz", hash = "sha256:6ed2fd154a37611774d503469654336bfb53ec3686a26745d89bfda2ce64a9cf", size = 62250, upload-time = "2025-09-05T15:01:37.648Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/1e/414c3201fe8f56ed72157ce3355993ee5880289faecfe02edfcc621cafcd/piperf3-0.0.6.tar.gz", hash = "sha256:688509ef1699bd6afcc420b9bd22a17b5165b34ed6fa67ad1aede202dc116d92", size = 62718, upload-time = "2025-09-05T18:17:52.844Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0f/55/327833ae293e2711bfaa9717c0e3115c39c276e0a6aa0c959f74cc40d246/piperf3-0.0.5-py3-none-any.whl", hash = "sha256:35db57dc8685f8f09480284d772706e3efbaa1f6efd24d56b6e813fba0fcf14c", size = 16051, upload-time = "2025-09-05T15:01:36.808Z" },
+    { url = "https://files.pythonhosted.org/packages/a8/e3/ce11e1064f05f9e9f8e4f7ef32056ef9edcc3a311c8fdba03f9c946fe9e3/piperf3-0.0.6-py3-none-any.whl", hash = "sha256:bc6fde9b3368732555e26872e53228f57bee7af07c1d8a648ea9ed6b56c51b54", size = 16486, upload-time = "2025-09-05T18:17:51.497Z" },
 ]
 
 [[package]]
